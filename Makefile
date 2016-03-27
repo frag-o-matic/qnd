@@ -1,8 +1,6 @@
-all:
-    @for a in $$(ls); do \
-        if [ -d $$a ]; then \
-            echo "processing folder $$a"; \
-            $(MAKE) -C $$a; \
-        fi; \
-    done;
-    @echo "Done!"
+SUBDIRS = UniquePtr
+
+subdirs:
+        for dir in $(SUBDIRS); do \
+          $(MAKE) -C $$dir; \
+        done
