@@ -62,8 +62,8 @@ public:
     operator bool() const {return _ptr != nullptr;} 
 
     // equality operator
-    bool operator == const (const UniquePtr<T>& other) {return _ptr == other._ptr;}
-    bool operator != const (const UniquePtr<T>& other) {return _ptr != other._ptr;}
+    bool operator == (const UniquePtr<T>& other) const {return _ptr == other._ptr;}
+    bool operator != (const UniquePtr<T>& other) const {return _ptr != other._ptr;}
 
     // get underlying pointer without giving up ownership
     T* get(void) const { return _ptr;}
