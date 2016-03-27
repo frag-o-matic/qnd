@@ -1,2 +1,2 @@
-all:
-    cd UniquePtr && $(MAKE)
+subsystem:
+			cd UniquePtr && $(MAKE)
