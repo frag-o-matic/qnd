@@ -1,7 +1,8 @@
-SUBDIRS := $(wildcard */.)
-
-.PHONY : all $(SUBDIRS)
-all : $(SUBDIRS)
-
-$(SUBDIRS) :
-    $(MAKE) -C $@ clean all
+all:
+    @for a in $$(ls); do \
+        if [ -d $$a ]; then \
+            echo "processing folder $$a"; \
+            $(MAKE) -C $$a; \
+        fi; \
+    done;
+    @echo "Done!"
