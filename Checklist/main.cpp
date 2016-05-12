@@ -46,9 +46,9 @@ class Messages
     private:
         static constexpr const char* VERSION="Checklist 0.1";
         static constexpr const char* DESCRIPTION="Simple, interactive checklist for the command-line";
-        static constexpr const char* COPYRIGHT="(c) whatever";
+        static constexpr const char* COPYRIGHT="(C) All Rights Reserved. Whatever.";
         static constexpr const char* USAGE="usage: checklist file1 [...]";
-        static constexpr const char* AUTHOR="Written by abc";
+        static constexpr const char* AUTHOR="Written by frag_o_matic. Mail: frag_o_matic (at) gmx (dot) com";
 };
 
 /* Main class, contains all the monkey business */
