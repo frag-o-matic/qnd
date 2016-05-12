@@ -1,4 +1,4 @@
-SUBDIRS = UniquePtr SharedPtr
+SUBDIRS = UniquePtr SharedPtr Checklist
 
 subdirs:
 		for dir in $(SUBDIRS); do \
