@@ -1,5 +1,5 @@
 ## Checklist ##
-`checklist` is a very simple terminal based application to run through a checklist. 
+`checklist` is a bare-bones terminal based application for running through a checklist written in `C++`. I use it to run my personal checklists for build, review and packaging releases etc.
 
 ###Build###
 Build has been tested with `Ubuntu 14.04` and `Ubuntu 16.04` releases with the system `gcc`. To build, simply run `make` in the folder containing the source files. There are no additional dependencies.
@@ -19,7 +19,7 @@ See the `screenshots` folder.
 * See file `joels_codereview_checklist` for further details
 
 ###Additional Notes###
-This is a quick-and-dirty (pre-alpha quality) tool and hasn't been tested thoroughly. Expect bugs. It seems to run just fine with `urvtx` and `xfce4-terminal` under `i3wm` and `xfce-desktop` respectively.
+This is a quick-and-dirty (pre-alpha quality) tool and hasn't been tested thoroughly. Expect bugs. It seems to run just fine with `urvtx` and `xfce4-terminal` under `i3wm` and `xfce-desktop` respectively. I've been using it without issues for about half a year now.
 
 
 ![works on my machine](https://blog.codinghorror.com/content/images/uploads/2007/03/6a0120a85dcdae970b0128776ff992970c-pi.png)
