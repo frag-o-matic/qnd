@@ -4,7 +4,7 @@
 ###Downloading###
 You can get just this folder by:
 * Running `svn checkout https://github.com/frag-o-matic/qnd/trunk/Checklist` (requires `svn` installed)
-* Visit https://kinolien.github.io/gitzip/ and input `https://github.com/frag-o-matic/qnd/edit/master/Checklist/`, then click the `Download` button next to the folder called `Checklist`
+* Visit https://kinolien.github.io/gitzip/ and input `https://github.com/frag-o-matic/qnd/edit/master/Checklist/` and click `Search`. Then click the `Download` button next to the folder called `Checklist`
 
 ###Build###
 Build has been tested with `Ubuntu 14.04` and `Ubuntu 16.04` releases with the system `gcc`. To build, simply run `make` in the folder containing the source files. There are no additional dependencies.
