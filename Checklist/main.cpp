@@ -34,6 +34,7 @@ class Messages
         static constexpr const char* CHECK_BOX="[X]";
         static constexpr const char* START_MSG=" : START";
         static constexpr const char* DONE_MSG=" : DONE";
+        static constexpr const char COMMENT_CHAR='#';
         static void showHelp()
         {
             std::cout<<Messages::VERSION<<std::endl<<Messages::DESCRIPTION<<std::endl<<std::endl<<Messages::USAGE<<std::endl<<std::endl;
@@ -46,9 +47,9 @@ class Messages
     private:
         static constexpr const char* VERSION="Checklist 0.1";
         static constexpr const char* DESCRIPTION="Simple, interactive checklist for the command-line";
-        static constexpr const char* COPYRIGHT="(C) All Rights Reserved. Whatever.";
+        static constexpr const char* COPYRIGHT="(c) whatever";
         static constexpr const char* USAGE="usage: checklist file1 [...]";
-        static constexpr const char* AUTHOR="Written by frag_o_matic. Mail: frag_o_matic (at) gmx (dot) com";
+        static constexpr const char* AUTHOR="Written by abc";
 };
 
 /* Main class, contains all the monkey business */
@@ -119,7 +120,18 @@ class Checklist
             {
                 std::string line;
                 while (std::getline(fIn,line))
-                    retVal.push_back(line);
+                {
+                    if((line.front() == Messages::COMMENT_CHAR)
+                        || (line.length() < 2))
+                    {
+                        //ignore comments and blank lines
+                        continue;
+                    }
+                    else
+                    {
+                        retVal.push_back(line);
+                    }
+                }
             }
             return retVal;
         }
