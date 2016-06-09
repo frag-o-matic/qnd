@@ -20,3 +20,4 @@ See the `screenshots` folder.
 
 ###Additional Notes###
 This is a quick-and-dirty (pre-alpha quality) tool and hasn't been tested thoroughly. Expect bugs. It seems to run just fine with `urvtx` and `xfce4-terminal` under `i3wm` and `xfce-desktop` respectively.
+![works on my machine](https://blog.codinghorror.com/content/images/uploads/2007/03/6a0120a85dcdae970b0128776ff992970c-pi.png)
